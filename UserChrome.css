@@ -1,0 +1,18 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+#TabsToolbar {
+	visibility: collapse;
+}
+
+#titlebar {
+	margin-bottom: -34px !important;
+}
+
+#titlebar-buttonbox {
+	height: 32px !important;
+	background-color: #323234
+}
+
+#sidebar-header {
+    visibility: collapse;
+}
