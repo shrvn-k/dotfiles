@@ -36,7 +36,7 @@ ZSH_THEME="gallois"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -99,6 +99,9 @@ source $ZSH/oh-my-zsh.sh
 alias mkcd='_(){ mkdir -p $1; cd $1; }; _'
 alias blah='python /Users/kanags/Documents/code/ec2-ssher/main.py'
 alias wire='open -n /Applications/Wireshark.app'
+alias digs='dig +short'
+alias digt='dig +trace'
+alias digx='dig -x'
 
 . /usr/local/etc/profile.d/z.sh
 eval $(thefuck --alias)
