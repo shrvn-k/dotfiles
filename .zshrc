@@ -102,7 +102,8 @@ alias wire='open -n /Applications/Wireshark.app'
 alias digs='dig +short'
 alias digt='dig +trace'
 alias digx='dig -x'
-
+alias e=exit
+alias push='/Users/kanags/Documents/code/push/push'
 . /usr/local/etc/profile.d/z.sh
 eval $(thefuck --alias)
 
