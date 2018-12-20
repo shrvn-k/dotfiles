@@ -36,7 +36,7 @@ ZSH_THEME="gallois"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
- ENABLE_CORRECTION="true"
+  ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -66,6 +66,7 @@ plugins=(
   git
   zsh-syntax-highlighting
   zsh-autosuggestions 
+  aws
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -106,6 +107,11 @@ alias digt='dig +trace'
 alias digx='dig -x'
 alias e=exit
 alias push='/Users/kanags/Documents/code/push/push'
+alias ls='gls --color -h --group-directories-first'
 . /usr/local/etc/profile.d/z.sh
 eval $(thefuck --alias)
 
+
+
+# key bindings
+bindkey '^ ' autosuggest-accept
