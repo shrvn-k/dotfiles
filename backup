@@ -2,3 +2,8 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
 cp ~/.zshrc $DIR
 cp ~/.vimrc $DIR
+
+cd $DIR
+git add -A
+git commit -m "$(git status --short)"
+git push
