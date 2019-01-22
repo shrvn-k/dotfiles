@@ -36,10 +36,10 @@ ZSH_THEME="gallois"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-  ENABLE_CORRECTION="true"
+  ENABLE_CORRECTION="false"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -64,7 +64,7 @@ ZSH_THEME="gallois"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  zsh-syntax-highlighting
+#  zsh-syntax-highlighting
   zsh-autosuggestions 
   aws
 )
@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias mkcd='_(){ mkdir -p $1; cd $1; }; _'
-alias blah='python /Users/kanags/Documents/code/ec2-ssher/main.py'
+alias s='python /Users/kanags/Documents/code/ec2-ssher/main.py'
 alias wire='open -n /Applications/Wireshark.app'
 alias digs='dig +short'
 alias digt='dig +trace'
@@ -108,10 +108,12 @@ alias digx='dig -x'
 alias e=exit
 alias push='/Users/kanags/Documents/code/push/push'
 alias ls='gls --color -h --group-directories-first'
+alias c=clear
 . /usr/local/etc/profile.d/z.sh
 eval $(thefuck --alias)
 
-
+# disable command corrections
+# unsetopt correct_all
 
 # key bindings
 bindkey '^ ' autosuggest-accept
