@@ -4,9 +4,9 @@
 	visibility: collapse;
 }
 
-#titlebar {
+/*#titlebar {
 	margin-bottom: -34px !important;
-}
+}*/
 
 #titlebar-buttonbox {
 	height: 32px !important;
@@ -15,4 +15,4 @@
 
 #sidebar-header {
     visibility: collapse;
-}
+}	
