@@ -111,6 +111,7 @@ alias ls='gls --color -h --group-directories-first'
 alias c=clear
 . /usr/local/etc/profile.d/z.sh
 eval $(thefuck --alias)
+alias ss='ssh -i /Users/kanags/keys/north-virginia.pem ec2-user@54.81.101.38'
 
 # disable command corrections
 # unsetopt correct_all
