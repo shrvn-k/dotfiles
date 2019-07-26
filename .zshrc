@@ -99,25 +99,25 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias mkcd='_(){ mkdir -p $1; cd $1; }; _'
-alias s='python /Users/kanags/Documents/code/ec2-ssher/main.py'
-alias wire='open -n /Applications/Wireshark.app'
+
+. /usr/local/etc/profile.d/z.sh  	#load z plugin to jump around
+alias c=clear
 alias digs='dig +short'
 alias digt='dig +trace'
 alias digx='dig -x'
 alias e=exit
-alias push='/Users/kanags/Documents/code/push/push'
-alias ls='gls --color -h --group-directories-first'
-alias c=clear
-. /usr/local/etc/profile.d/z.sh
-eval $(thefuck --alias)
-alias ss='ssh -i /Users/kanags/keys/north-virginia.pem ec2-user@54.81.101.38'
+alias ls='gls --color -h --group-directories-first'		#colorize ls output and place dirs on top requires coreutils to be installed 
+alias mkcd='_(){ mkdir -p $1; cd $1; }; _'				#mkdir directory and cd into it
+alias s='python /Users/kanags/Documents/code/ec2-ssher/main.py'		#ssh script
+alias ss='ssh -i /Users/kanags/keys/north-virginia.pem ec2-user@54.81.101.38' 	#ssh into my main instance
+alias wire='open -n /Applications/Wireshark.app'	#open new instance of Wireshark
 alias zcat='gunzip -c'
+eval $(thefuck --alias)
 
 # disable command corrections
 # unsetopt correct_all
 
 # key bindings
-bindkey '^ ' autosuggest-accept
+bindkey '^ ' autosuggest-accept 	#accept auto-suggestion from zsh-autosuggestions plugin
 
-function google() { open -a /Applications/Firefox.app "http://www.google.com/search?q= $1"; }
+function google() { open -a /Applications/Firefox.app "http://www.google.com/search?q= $1"; }	#search google from terminal (opens firefox tab)
