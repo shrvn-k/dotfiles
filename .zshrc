@@ -119,3 +119,5 @@ alias zcat='gunzip -c'
 
 # key bindings
 bindkey '^ ' autosuggest-accept
+
+function google() { open -a /Applications/Firefox.app "http://www.google.com/search?q= $1"; }
