@@ -112,6 +112,7 @@ alias s='python /Users/kanags/Documents/code/ec2-ssher/main.py'		#ssh script
 alias ss='ssh -i /Users/kanags/keys/north-virginia.pem ec2-user@54.81.101.38' 	#ssh into my main instance
 alias wire='open -n /Applications/Wireshark.app'	#open new instance of Wireshark
 alias zcat='gunzip -c'
+alias please=sudo
 eval $(thefuck --alias)
 
 # disable command corrections
