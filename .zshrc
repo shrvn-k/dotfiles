@@ -65,7 +65,7 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(
   git
 #  zsh-syntax-highlighting
-  zsh-autosuggestions 
+#  zsh-autosuggestions 
   aws
 )
 
@@ -115,6 +115,12 @@ alias zcat='gunzip -c'
 alias please=sudo
 eval $(thefuck --alias)
 
+# getting python3 to work:
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+
+# auto suggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # disable command corrections
 # unsetopt correct_all
 
@@ -122,3 +128,4 @@ eval $(thefuck --alias)
 bindkey '^ ' autosuggest-accept 	#accept auto-suggestion from zsh-autosuggestions plugin
 
 function google() { open -a /Applications/Firefox.app "http://www.google.com/search?q= $1"; }	#search google from terminal (opens firefox tab)
+
