@@ -9,6 +9,7 @@ export ZSH="/Users/kanags/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="gallois"
+ZSH_DISABLE_COMPFIX=true
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -108,12 +109,18 @@ alias digx='dig -x'
 alias e=exit
 alias ls='gls --color -h --group-directories-first'		#colorize ls output and place dirs on top requires coreutils to be installed 
 alias mkcd='_(){ mkdir -p $1; cd $1; }; _'				#mkdir directory and cd into it
-alias s='python /Users/kanags/Documents/code/ec2-ssher/main.py'		#ssh script
+alias s='python3 /Users/kanags/Documents/code/ec2-ssher/main.py'		#ssh script
 alias ss='ssh -i /Users/kanags/keys/north-virginia.pem ec2-user@54.81.101.38' 	#ssh into my main instance
 alias wire='open -n /Applications/Wireshark.app'	#open new instance of Wireshark
 alias zcat='gunzip -c'
 alias please=sudo
 eval $(thefuck --alias)
+
+# getting python3 to work:
+export PATH="/usr/local/opt/python@3.8/bin:$PATH"
+
+# auto suggestions
+# source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # disable command corrections
 # unsetopt correct_all
