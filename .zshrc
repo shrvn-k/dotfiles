@@ -103,6 +103,7 @@ source $ZSH/oh-my-zsh.sh
 
 . /usr/local/etc/profile.d/z.sh  	#load z plugin to jump around
 alias c=clear
+alias curly='curl -vo /dev/null'	#curl command I use too many times
 alias digs='dig +short'
 alias digt='dig +trace'
 alias digx='dig -x'
