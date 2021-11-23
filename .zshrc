@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/kanags/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -110,8 +110,8 @@ alias digx='dig -x'
 alias e=exit
 alias ls='gls --color -h --group-directories-first'		#colorize ls output and place dirs on top requires coreutils to be installed 
 alias mkcd='_(){ mkdir -p $1; cd $1; }; _'				#mkdir directory and cd into it
-alias s='python3 /Users/kanags/Documents/code/ec2-ssher/main.py'		#ssh script
-alias ss='ssh -i /Users/kanags/keys/north-virginia.pem ec2-user@54.81.101.38' 	#ssh into my main instance
+alias s='python3 $HOME/Documents/code/ec2-ssher/main.py'		#ssh script
+alias ss='ssh -i $HOME/keys/north-virginia.pem ec2-user@54.81.101.38' 	#ssh into my main instance
 alias wire='open -n /Applications/Wireshark.app'	#open new instance of Wireshark
 alias zcat='gunzip -c'
 alias please=sudo
